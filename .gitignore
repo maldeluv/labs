@@ -14,6 +14,21 @@ __pycache__/
 .venv/
 
 # === C++ / Visual Studio ===
+# Игнорировать все вложенные файлы проектов VS
+labs/programming/cpp/**/**/*.vcxproj*
+labs/programming/cpp/**/x64/
+labs/programming/cpp/**/Debug/
+labs/programming/cpp/**/Release/
+labs/programming/cpp/**/.vs/
+labs/programming/cpp/**/**/*.sln
+labs/programming/cpp/**/**/*.user
+labs/programming/cpp/**/**/*.filters
+
+# Разрешить исходники
+!labs/programming/cpp/**/*.cpp
+!labs/programming/cpp/**/*.h
+
+
 labs/programming/cpp/**/Debug/
 labs/programming/cpp/**/Release/
 labs/programming/cpp/**/x64/
