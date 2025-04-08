@@ -1,4 +1,9 @@
-# ===== Python =====
+# === Общие IDE-папки ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Python ===
 __pycache__/
 *.py[cod]
 *.pyo
@@ -8,67 +13,63 @@ __pycache__/
 .env
 .venv/
 
-# ===== C++ / Visual Studio =====
-*.exe
-*.obj
-*.pdb
-*.idb
-*.ilk
-*.aps
-*.ncb
-*.suo
-*.user
-*.sdf
-*.opensdf
-*.log
-*.VC.db
-*.VC.opendb
-ipch/
-*.cache
-*.vs/
-*.vscode/
-Debug/
-Release/
-x64/
-x86/
-build/
-out/
+# === C++ / Visual Studio ===
+labs/programming/cpp/**/Debug/
+labs/programming/cpp/**/Release/
+labs/programming/cpp/**/x64/
+labs/programming/cpp/**/x86/
+labs/programming/cpp/**/.vs/
+labs/programming/cpp/**/*.exe
+labs/programming/cpp/**/*.obj
+labs/programming/cpp/**/*.pdb
+labs/programming/cpp/**/*.ilk
+labs/programming/cpp/**/*.idb
+labs/programming/cpp/**/*.log
+labs/programming/cpp/**/*.tlog
+labs/programming/cpp/**/*.sdf
+labs/programming/cpp/**/*.VC.db
+labs/programming/cpp/**/*.VC.opendb
+labs/programming/cpp/**/*.ipch
+labs/programming/cpp/**/*.user
+labs/programming/cpp/**/*.suo
+labs/programming/cpp/**/*.ncb
 
-# ===== Java =====
-*.class
-*.jar
-*.war
-*.ear
-*.iml
-*.idea/
+# === Assembler (DOS) ===
+labs/programming/assembler/**/Debug/
+labs/programming/assembler/**/Release/
+labs/programming/assembler/**/*.exe
+labs/programming/assembler/**/*.com
+labs/programming/assembler/**/*.obj
+labs/programming/assembler/**/*.map
+labs/programming/assembler/**/*.lst
+labs/programming/assembler/**/*.bin
+labs/programming/assembler/**/*.tlog
 
-# ===== Kotlin (на будущее) =====
-*.class
-*.kt~
-*.kts~
-*.log
+# === Java ===
+labs/programming/java/**/out/
+labs/programming/java/**/*.class
+labs/programming/java/**/.idea/
+labs/programming/java/**/*.iml
 
-# ===== Pascal =====
-*.exe
-*.o
-*.ppu
-*.bak
+# === Kotlin (на будущее) ===
+labs/programming/kotlin/**/build/
+labs/programming/kotlin/**/*.class
+labs/programming/kotlin/**/.idea/
+labs/programming/kotlin/**/*.iml
 
-# ===== Assembler =====
-*.lst
-*.obj
-*.exe
-*.bin
-*.map
-*.com
+# === Pascal ===
+labs/programming/pascal/**/*.exe
+labs/programming/pascal/**/*.o
+labs/programming/pascal/**/*.ppu
+labs/programming/pascal/**/*.bak
 
-# ===== OS & Editor stuff =====
+# === Прочий мусор от ОС и редакторов ===
 .DS_Store
 Thumbs.db
 desktop.ini
 *.swp
 *.swo
 *.tmp
-
-# ===== Git backup =====
+*.bak
 *.orig
+
