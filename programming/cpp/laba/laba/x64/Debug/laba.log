@@ -1,0 +1,4 @@
+﻿  laba.cpp
+C:\Users\mvideo\Desktop\laba\laba\laba.cpp(68,11): warning C4804: <=: небезопасное использование типа "bool" в операции
+C:\Users\mvideo\Desktop\laba\laba\laba.cpp(123,9): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  laba.vcxproj -> C:\Users\mvideo\Desktop\laba\x64\Debug\laba.exe
