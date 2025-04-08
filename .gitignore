@@ -1,0 +1,74 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+.env
+.venv/
+
+# ===== C++ / Visual Studio =====
+*.exe
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.aps
+*.ncb
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.log
+*.VC.db
+*.VC.opendb
+ipch/
+*.cache
+*.vs/
+*.vscode/
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# ===== Java =====
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.idea/
+
+# ===== Kotlin (на будущее) =====
+*.class
+*.kt~
+*.kts~
+*.log
+
+# ===== Pascal =====
+*.exe
+*.o
+*.ppu
+*.bak
+
+# ===== Assembler =====
+*.lst
+*.obj
+*.exe
+*.bin
+*.map
+*.com
+
+# ===== OS & Editor stuff =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.tmp
+
+# ===== Git backup =====
+*.orig
