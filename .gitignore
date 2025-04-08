@@ -21,33 +21,12 @@ labs/programming/cpp/**/Debug/
 labs/programming/cpp/**/Release/
 labs/programming/cpp/**/.vs/
 labs/programming/cpp/**/**/*.sln
-labs/programming/cpp/**/**/*.user
-labs/programming/cpp/**/**/*.filters
-
-# Разрешить исходники
-!labs/programming/cpp/**/*.cpp
-!labs/programming/cpp/**/*.h
-
+labs/programming/cpp/**/**/*.vcxproj.user
+labs/programming/cpp/**/**/*.vcxproj.filters
 
 labs/programming/cpp/**/Debug/
 labs/programming/cpp/**/Release/
 labs/programming/cpp/**/x64/
-labs/programming/cpp/**/x86/
-labs/programming/cpp/**/.vs/
-labs/programming/cpp/**/*.exe
-labs/programming/cpp/**/*.obj
-labs/programming/cpp/**/*.pdb
-labs/programming/cpp/**/*.ilk
-labs/programming/cpp/**/*.idb
-labs/programming/cpp/**/*.log
-labs/programming/cpp/**/*.tlog
-labs/programming/cpp/**/*.sdf
-labs/programming/cpp/**/*.VC.db
-labs/programming/cpp/**/*.VC.opendb
-labs/programming/cpp/**/*.ipch
-labs/programming/cpp/**/*.user
-labs/programming/cpp/**/*.suo
-labs/programming/cpp/**/*.ncb
 
 # === Assembler (DOS) ===
 labs/programming/assembler/**/Debug/
