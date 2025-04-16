@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="uglystyles.css" />
+    <title>forma blyat</title>
+    <link rel="stylesheet" href="../preloader.css">
+</head>
+<body>
+
+<!-- Прелоадер -->
+<div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+
+    <form>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Добро Пожаловать!</span>
+                <header>Анкета для регистрации</header>
+            </div>
+
+            <div class="input-field">
+                <label id="email">Email</label>
+                <input type="email" class="input" for="email" placeholder="email"/>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-field">
+                <label  id="password">Password</label>
+                <input class="input" for="password" type="password" placeholder="password"/>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-field">
+                <label id="button"></label>
+                <input type="submit" class="submit" value="Отправить" for="button" />
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check" />
+                    <label for="check">Согласие с соглашением</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Вопросы?</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+    <script src="contactform.js"></script>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 2000);
+        }
+      </script>
+
+</body>
+</html>
