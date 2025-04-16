@@ -50,7 +50,8 @@ Thumbs.db
 **/x64/
 **/Debug/
 **/Release/
-
+**/**/x64/
+/x64/Debug/
 # ====== VSCode ======
 .vscode/
 
