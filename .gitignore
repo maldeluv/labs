@@ -89,4 +89,66 @@ desktop.ini
 *.tmp
 *.bak
 *.orig
+# Visual Studio build folders
+[Bb]in/
+[Oo]bj/
+x64/
+Debug/
+Release/
+*.tlog/
+*.log
+*.pch
+*.pdb
+*.ipch
+*.aps
+*.ilk
+*.idb
+*.iobj
+*.iopt
+*.ipdb
+*.lastbuildstate
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+*.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# CMake intermediate files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Auto-generated
+*.ncb
+*.sbr
+*.res
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Backup files
+*.bak
+*.tmp
+
+# Hidden system files
+.DS_Store
+Thumbs.db
+
+# VS project folders with the same name
+**/x64/
+**/Debug/
+**/Release/
+
+# Others
+*.class
+*.vspscc
+*.vssscc
 
