@@ -1,0 +1,31 @@
+.sil {
+	width: 100%;
+	height: 600px;
+	background: 
+		linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+		url(imgforslide/bmw/brandon-vazquez-z_nWzq2kWf4-unsplash.jpg);
+	/* background-image: url(imgforslide/background1.jpg); */
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+.sil h2{
+    top: 20%;
+	left: 10%;
+    position: absolute;
+	font-size: 52px;
+    color: white;
+}
+
+.sil h3{
+    top: 35%;
+	left: 10%;
+    position: absolute;
+	font-size: 20px;
+    color: white;
+}
+
+h3 {
+	filter: opacity(0.6);
+}

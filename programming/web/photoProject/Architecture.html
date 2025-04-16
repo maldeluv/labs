@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Architecture</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/gallery/grid-gallery.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="cssforlogo.css">
+        <link rel="stylesheet" href="prewie2.css">
+    </head>
+    <body>
+
+        <div class="logo">
+            <a href="homepage.html"><img src="bxs--home.svg" alt="sdsd"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="forma 2/forma 2.html">Обратная связь</a></li>
+                <li><a href="podpiska/podpiska.html">Поддержать авторов</a></li>
+                <li><a href="galery.html">Галерея</a></li>
+            </ul>
+        </nav>
+
+        <div class="sil">
+            <h2>Architecture & Interiors</h2>
+            <br>
+            <h3>Celebrating the artistry of spaces, this category recognizes exceptional <br> photography that captures the essence of architectural marvels and interior<br> designs. From sweeping cityscapes to intimate details, entrants showcase<br> the beauty and functionality of built environments.</h3>
+        </div>
+
+        <div class="photo" id="photo">
+            <div class="container">
+                <div class="photo__wrapper">
+                    <h3 class="photo__title">Photo by Mobile Photo Group</h3>
+                    <div class="gg-container">
+                        <div class="gg-box">
+                            <img src="imgforslide/Architecture/anne-sophie-benoit-HZmib_jXphw-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/anton-shcherbakov-xLjeITahsAo-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/arthur-osipyan-xXX3_lvjmG8-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/benjamin-voros-JhjDL3TZKJk-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/braden-collum-75XHJzEIeUc-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/bruno-martins-GkZvxVsHYWw-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/clay-banks-8pFh9JUcQOY-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/franco-salcedo-Y7A0cmCmSWE-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/james-baldwin-JEnroYciJ8Y-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/leonardo-yip-OT-FKh1z5jk-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/marcin-nowak-iXqTqC-f6jI-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/nathan-cima-8DWP7bttljg-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/nathan-cima-N5Oqx-F-pxc-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/nathan-cima-QiOhrTy9LhI-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/simon-marsault-vej_C8KtxoA-unsplash.jpg" alt=""/>
+                            <img src="imgforslide/Architecture/zane-lee-bvMtyevS2y4-unsplash.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/menu.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/gallery/grid-gallery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!--Инициализация скрипта для галереи -->
+        <script>
+            gridGallery({
+                selector: ".dark",
+                darkMode: true
+            });
+            gridGallery({
+                selector: "#horizontal",
+                layout: "horizontal"
+            });
+            gridGallery({
+                selector: "#square",
+                layout: "square"
+            });
+            gridGallery({
+                selector: "#gap",
+                gaplength: 10
+            });
+            gridGallery({
+                selector: "#heightWidth",
+                rowHeight: 180,
+                columnWidth: 280
+            });
+        </script>
+    </body>
+</html>
