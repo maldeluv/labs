@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="uglystyles.css"/>
+    <meta charset="utf-8" />
+    <title>Форма отправки</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="..//homepage.html"><img src="bxs--home.svg" alt="sdsd"></a>
+    </div>
+    <div class="login-box">
+        <h2>Здесь можно выложить фото</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="user-box">
+                <input type="text" name="user" for="user" required />
+                <label id="user">Username:</label>
+            </div>
+            <input type="file" name="file" class="file">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button type="submit">Отправить файлы</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
