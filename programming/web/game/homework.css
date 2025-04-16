@@ -1,0 +1,30 @@
+body {
+    background: cadetblue;
+}
+
+.location_container {
+    margin: 1cm;
+}
+table {
+    text-align: right;
+    margin: 40px;
+}
+
+.scale {
+    transition: 1s; /* Время эффекта */
+    border: 10px solid #000000;
+}
+
+.scale:hover {
+    transform: scale(2); /* Увеличиваем масштаб */
+    border: 10px dashed red;
+}
+
+h2 { /* h2 на страничках нет, обратиться к классу все не получается*/
+    color: red;
+    text-align: center
+}
+
+p {
+    text-align: center;
+}

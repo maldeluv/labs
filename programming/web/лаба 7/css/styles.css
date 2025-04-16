@@ -1,0 +1,109 @@
+body {
+    background-color: antiquewhite;
+}
+
+/* Стили для контейнера с блоками */
+.overlap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 2rem;
+    height: 400px;
+    position: relative; /* Для корректного позиционирования дочерних элементов */
+}
+
+/* Общие стили для всех блоков */
+.box {
+    padding: 40px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавил тень для глубины */
+    transition: transform 0.3s; /* Анимация при наведении */
+}
+
+/* Стили для отдельных блоков */
+.box-red {
+    background: #ff4757;
+    top: 50px;
+    left: 30px;
+    z-index: 1;
+}
+
+.box-green {
+    background: #2ed573;
+    top: -20px;
+    left: -40px;
+    z-index: 2;
+}
+
+.box-blue {
+    background: #3742fa;
+    top: 80px;
+    left: -100px;
+    z-index: 3;
+}
+
+/* Эффект при наведении */
+.box:hover {
+    transform: scale(1.02); /* Увеличение блока */
+    cursor: pointer;
+}
+
+/* Стили для вертикальной формы */
+.custom-form {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #f1f2f6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Отступы между элементами */
+}
+
+.custom-form label {
+    font-weight: 500;
+    color: #2f3542;
+}
+
+input, select, textarea, button {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ced6e0;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+fieldset {
+    border: 1px solid #ced6e0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+legend {
+    padding: 0 8px;
+    font-size: 0.9em;
+    color: #57606f;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 5%;
+}
+
+button {
+    background: #2f3542;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center;
+}
+
+button:hover {
+    background: #57606f;
+}
+

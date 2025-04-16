@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    <meta name="description" content="Grid, git and input">
+    <meta name="keywords" content="html, css, grid, form, git"> <!-- Контролирует поведение поисковых систем при индексации страницы -->
+    <meta name="robots" content="index,follow,noodp"> <!-- Все поисковые системы -->
+    <meta name="googlebot" content="index,follow"> <!-- Указание отдельно для Google -->
+
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="overlap-grid">
+        <div class="box box-red">Красный</div>
+        <div class="box box-green">Зеленый</div>
+        <div class="box box-blue">Синий</div>
+    </div>
+
+    <form class="custom-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate">
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}">
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address">
+
+        <label>Предпочитаемый язык:</label>
+        <select>
+            <option value="ru">Русский</option>
+            <option value="en">Английский</option>
+        </select>
+        
+        <fieldset>
+            <legend>Способ связи:</legend>
+            <label>
+                <input type="radio" name="contact" value="email" required> E-mail
+            </label>
+            <label>
+                <input type="radio" name="contact" value="phone"> Телефон
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Дополнительно:</legend>
+                <input type="checkbox" name="newsletter"> 
+                <label>Подписаться на рассылку</label>
+            
+                <input type="checkbox" name="agreement" required> 
+                <label>Согласен на обработку данных</label>
+        </fieldset>
+
+        <label for="comments">Комментарии:</label>
+        <textarea id="comments" rows="3"></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 11</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <style>
+        :root {
+            --primary: #00ff1ec7;
+            --secondary: #00fd48bf;
+            --light: #F4F4F8;
+        }
+    
+        body {
+            background: linear-gradient(135deg, #ffffff7e, #e0e0e0 100%);
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+        }
+    
+        .container {
+            padding: 20px;
+            display: grid;
+            place-items: center;
+        }
+    
+        .task-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 15px;
+            width: 400px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid var(--primary);
+        }
+    
+        .task-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+    
+        input[type="button"] {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        input[type="button"]:hover {
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        input[type="text"], select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+    
+        input[type="text"]:focus, select:focus {
+            border-color: var(--secondary);
+            outline: none;
+        }
+    
+        label {
+            display: block;
+            margin: 5px 0 5px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+    
+        #weather {
+            background: white no-repeat right 10px center;
+            background-size: 12px;
+            appearance: none;
+        }
+    
+        .loop-options {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0;
+        }
+    
+        input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+    
+        input[type="radio"]:checked {
+            background: var(--secondary);
+            border-color: var(--secondary);
+            box-shadow: inset 0 0 0 3px white;
+        }
+    
+        .task-box {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Задание 1-4 -->
+    <div class="container">
+        <form class="task-box">
+            <input type="button" value="Задание 1-4" onclick="task1_4()">
+            <label>var1: <input type="text" id="text1"></label>
+            <label>var2: <input type="text" id="text2"></label>
+            <label>var3: <input type="text" id="text3"></label>
+            <label>var4: <input type="text" id="text4"></label>
+        </form>
+    </div>
+
+    <!-- Задание 5 -->
+    <div class="container">
+        <form class="task-box">
+            <input type="button" value="Квадратное уравнение" onclick="task5()">
+            <label>A: <input type="text" id="textA"></label>
+            <label>B: <input type="text" id="textB"></label>
+            <label>C: <input type="text" id="textC"></label>
+        </form>
+    </div>
+
+    <!-- Задание 6 -->
+    <div class="container">
+        <form class="task-box">
+            <input type="button" value="Циклы" onclick="task6()">
+            <div>
+                <input type="radio" name="loop" id="for" checked><label for="for">For</label>
+                <input type="radio" name="loop" id="while"><label for="while">While</label>
+                <input type="radio" name="loop" id="dowhile"><label for="dowhile">Do-While</label>
+            </div>
+            <input type="text" id="loopResult">
+        </form>
+    </div>
+
+    <!-- Задание 7 -->
+    <div class="container">
+        <form class="task-box">
+            <input type="button" value="Погода" onclick="task7()">
+            <select id="weather">
+                <option value="sunny">Солнечная</option>
+                <option value="rainy">Дождливая</option>
+                <option value="snowy">Снежная</option>
+                <option value="windy">Ветреная</option>
+            </select>
+        </form>
+    </div>
+
+    <script>
+        // Задание 1-4
+        function task1_4() {
+            let vars = [
+                prompt("Введите число", "0"),
+                prompt("Введите большое число", "9999999999999999999999999"),
+                prompt("Введите булево значение", "true"),
+                prompt("Введите слово", "word")
+            ];
+
+            vars.forEach((v, i) => document.getElementById(`text${i+1}`).value = v);
+
+            const converted = [
+                Number(vars[0]),
+                BigInt(vars[1]),
+                Boolean(vars[2]),
+                String(vars[3])
+            ];
+
+            alert(
+                `var1: ${typeof converted[0]}\n` +
+                `var2: ${typeof converted[1]}\n` +
+                `var3: ${typeof converted[2]}\n` +
+                `var4: ${typeof converted[3]}`
+            );
+        }
+
+        // Задание 5
+        function task5() {
+            const rawA = prompt("Коэффициент A", 1);
+            const rawB = prompt("Коэффициент B", 1);
+            const rawC = prompt("Коэффициент C", 1);
+
+            document.getElementById("textA").value = rawA;
+            document.getElementById("textB").value = rawB;
+            document.getElementById("textC").value = rawC;
+
+            const a = Number(rawA);
+            const b = Number(rawB);
+            const c = Number(rawC);
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                alert("Ошибка! Введены некорректные числа");
+                return;
+            }
+
+            const discriminant = b ** 2 - 4 * a * c;
+        
+            if (discriminant < 0) {
+                alert("Нет действительных корней");
+            } else {
+                const sqrtD = Math.sqrt(discriminant);
+                const x1 = (-b + sqrtD)/(2*a);
+                const x2 = (-b - sqrtD)/(2*a);
+                alert(`Корни: ${x1.toFixed(2)} и ${x2.toFixed(2)}`);
+            }
+        }
+
+        // Задание 6
+        function task6() {
+            let result = "";
+            const loopType = document.querySelector('input[name="loop"]:checked').id;
+            
+            switch(loopType) {
+                case 'for':
+                    for(let i = 0; i < 10; i++) result += i + " ";
+                    break;
+                case 'while':
+                    let i = 0;
+                    while(i < 10) result += i++ + " ";
+                    break;
+                case 'dowhile':
+                    let j = 0;
+                    do {
+                        result += j++ + " ";
+                    } while(j < 10);
+                    break;
+            }
+            
+            document.getElementById("loopResult").value = result;
+        }
+
+        // Задание 7
+        function task7() {
+            const weather = document.getElementById("weather").value;
+            const recommendations = {
+                sunny: "Наденьте кепку и солнцезащитные очки",
+                rainy: "Возьмите зонт и наденьте дождевик",
+                snowy: "Наденьте теплую куртку и шапку",
+                windy: "Наденьте ветровку"
+            };
+            alert(recommendations[weather]);
+        }
+    </script>
+</body>
+</html>

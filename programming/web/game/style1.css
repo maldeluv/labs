@@ -1,0 +1,28 @@
+body {
+    background-color: brown;
+}
+
+.aaa {
+    background-color: green;
+}
+
+.bbb {
+    background-color: yellow;
+}
+
+div {
+    padding: 40px;
+    margin: 40px;
+    text-align: justify;
+    background: url(https://otkritkis.com/wp-content/uploads/2021/12/naranjas-y-mandarinas-a-domicilio.jpg);
+}
+
+div > div {
+    padding: 40px;
+    margin: 40px;
+    background: orange;
+}
+
+p {
+    text-align: justify;
+}
