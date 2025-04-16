@@ -1,0 +1,63 @@
+# ====== Visual Studio & Build Artifacts ======
+.vs/
+x64/
+Debug/
+Release/
+ipch/
+*.log
+*.tlog
+*.obj
+*.pch
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.idb
+*.res
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.tmp
+*.bak
+
+# ====== CMake & Build Systems ======
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ====== Backup & Misc ======
+*.class
+*.exe
+*.dll
+*.lib
+*.exp
+*.vspscc
+*.vssscc
+.DS_Store
+Thumbs.db
+
+# ====== Ignore nested bin/obj/x64 folders too ======
+**/[Bb]in/
+**/[Oo]bj/
+**/x64/
+**/Debug/
+**/Release/
+
+# ====== VSCode ======
+.vscode/
+
+# ====== Only include source files explicitly ======
+!*.cpp
+!*.c
+!*.h
+!*.hpp
+!*.txt
+!*.md
