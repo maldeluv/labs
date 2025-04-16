@@ -1,3 +1,14 @@
+# Игнорировать вложенные папки x64, Debug, Release в любом подкаталоге
+**/x64/
+**/Debug/
+**/Release/
+
+# Также исключим .vcxproj и подобные в любых папках
+**/*.vcxproj
+**/*.vcxproj.user
+**/*.vcxproj.filters
+**/*.sln
+
 # ====== Visual Studio & Build Artifacts ======
 .vs/
 x64/
@@ -50,8 +61,8 @@ Thumbs.db
 **/x64/
 **/Debug/
 **/Release/
-**/**/x64/
-/x64/Debug/
+*/*/x64/
+**/x64/Debug/
 # ====== VSCode ======
 .vscode/
 
